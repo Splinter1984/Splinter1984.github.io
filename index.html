@@ -35,12 +35,38 @@
     {
         padding-right: 10px;
     }
+    .line-1{
+        position: relative;
+        top: 50%;  
+        width: auto;
+        margin: 0 auto;
+        border-right: 2px solid rgba(0, 0, 0, 0.75);
+        font-size: 180%;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        transform: translateY(-50%);    
+    }
+
+    /* Animation */
+    .anim-typewriter{
+        animation: typewriter 1s steps(12) 0s 1 normal both,
+                    blinkTextCursor 500ms steps(44) infinite normal;
+    }
+    @keyframes typewriter{
+        from{width: 0;}
+        to{width: 45%;}
+    }
+    @keyframes blinkTextCursor{
+        from{border-right-color: rgba(0, 0, 0, 0.75);}
+        to{border-right-color: transparent;}
+    }
 
   </style>
   <main>
     <body>
       <pre>
-        <h1>hello</h1>
+        <p class="line-1 anim-typewriter">hello, world!</p>
         <div id='socials'>
           <img align='center' src='https://www.freeiconspng.com/uploads/telegram-icon-icon-free-icons-8.png' width='20'/> <a href='https://www.telegram.me/Splinter1984'> @Splinter1984</a>
           <img align='center' src="https://www.freeiconspng.com/uploads/gmail-logo-icon-32.jpg" width="20"/> <a href='mailto:rom.andrianov1984@gmail.com'> rom.andrianov1984@gmail.com</a>
