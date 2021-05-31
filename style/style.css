@@ -79,3 +79,11 @@
         width: 500px;
         user-select: none;
     }
+    .scale {
+        cursor: pointer;
+        transition: 500ms;
+    }
+    .scale:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
